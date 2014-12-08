@@ -1,0 +1,47 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.main{
+    background-color: white;
+    color: #008000;
+}
+
+.main h1{
+    text-align: center;
+}
+
+.main img{
+    text-align: center;
+    width: 245px;
+}
+
+.step .buttons{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-next{
+    color: #008000;
+    vertical-align: bottom;
+    font-size: 14px;
+}
+
+.fb-likes{
+    text-align: center;
+    overflow: hidden;
+}
+
+.email-container{
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
