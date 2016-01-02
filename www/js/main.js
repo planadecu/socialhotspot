@@ -1,4 +1,4 @@
-﻿var likeClicked = false;
+var likeClicked = false;
 var fbUser = null;
 window.fbAsyncInit = function(){
     FB.init({
@@ -103,9 +103,15 @@ var step2 = function(){
 var stepX = function(user){
     $(".step").hide();
     $("#stepX").show();
-    $.ajax({
-      url: "logged.html?user="+user
-    });
+    $.post("http://10.10.10.1:5280/",{
+        "mode_login":"",
+        "accept_terms":"yes",
+        "redirect":"www.rourevell.com"
+    },null,"text");
+    
+    if(user != "") $.post("http://wifi.rourevell.com/user.php",{
+        "user":user
+    },null,"text");
 };
 
 $("#step0-next").click(step1);

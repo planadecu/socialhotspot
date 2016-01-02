@@ -18,6 +18,10 @@
     width: 245px;
 }
 
+.main .step{
+    text-align: justify;
+}
+
 .step .buttons{
     text-align: center;
     margin-top: 20px;
